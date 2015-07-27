@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.hover {
+			border: 1px solid black;
+		}
+		.hover__child {
+			display: none;
+		}
+
+		.hover.is-active .hover__child {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="hover" data-component="Hover">
+		Hover
+		<div class="hover__child">
+			Hovered
+		</div>
+	</div>
+
+	<div class="hover" data-component="Hover">
+		Hover
+		<div class="hover__child">
+			Hovered
+		</div>
+	</div>
+
+	<script src="../jquery.js"></script>
+	<script src="../component.js"></script>
+	<script src="../hover.js"></script>
+	<script src="../componentBootstrap.js"></script>
+</body>
+</html>

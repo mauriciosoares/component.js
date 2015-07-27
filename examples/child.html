@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.bind {
+			border: 1px solid black;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="bind" data-component="DataBinding">
+		<input type="text" data-component-child="DataBinding/input">
+
+		<div data-component-child="DataBinding/output">
+
+		</div>
+	</div>
+
+	<div class="bind" data-component="DataBinding">
+		<input type="text" data-component-child="DataBinding/input">
+
+		<div data-component-child="DataBinding/output">
+
+		</div>
+	</div>
+
+	<script src="../jquery.js"></script>
+	<script src="../component.js"></script>
+	<script src="../DataBinding.js"></script>
+	<script src="../componentBootstrap.js"></script>
+</body>
+</html>

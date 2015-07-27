@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style>
+		.hover {
+			border: 1px solid blue;
+			margin-bottom: 50px;
+		}
+		.hover__child {
+			display: none;
+		}
+
+		.hover.is-active .hover__child {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="hover" data-component="DataBinding:Hover">
+		<input type="text" data-component-child="DataBinding/input">
+
+		<div class="hover__child" data-component-child="DataBinding/output"></div>
+	</div>
+
+	<div class="hover" data-component="DataBinding:Hover">
+		<input type="text" data-component-child="DataBinding/input">
+
+		<div class="hover__child" data-component-child="DataBinding/output"></div>
+	</div>
+
+	<script src="../jquery.js"></script>
+	<script src="../component.js"></script>
+	<script src="../DataBinding.js"></script>
+	<script src="../hover.js"></script>
+	<script src="../componentBootstrap.js"></script>
+</body>
+</html>
